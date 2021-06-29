@@ -66,10 +66,10 @@ const BasicForm = (props) => {
     <form onSubmit={submitHandler}>
       <div className="control-group">
         <div className={firstNameClasses}>
-          <label htmlFor="name">First Name</label>
+          <label htmlFor="first_name">First Name</label>
           <input
             type="text"
-            id="name"
+            id="first_name"
             value={firstNameValue}
             onChange={firstNameChangeHandler}
             onBlur={firstNameBlurHandler}
@@ -79,10 +79,10 @@ const BasicForm = (props) => {
           )}
         </div>
         <div className={lastNameClasses}>
-          <label htmlFor="name">Last Name</label>
+          <label htmlFor="last_name">Last Name</label>
           <input
             type="text"
-            id="name"
+            id="last_name"
             value={lastNameValue}
             onChange={lastNameChangeHandler}
             onBlur={lastNameBlurHandler}
@@ -93,10 +93,10 @@ const BasicForm = (props) => {
         </div>
       </div>
       <div className={emailClasses}>
-        <label htmlFor="name">E-Mail Address</label>
+        <label htmlFor="email">E-Mail Address</label>
         <input
-          type="text"
-          id="name"
+          type="email"
+          id="email"
           value={emailValue}
           onChange={emailChangeHandler}
           onBlur={emailBlurHandler}
